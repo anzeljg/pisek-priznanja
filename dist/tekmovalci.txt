@@ -1,0 +1,7 @@
+Janez Novak,46z,12345
+Lučka Potebuješ,46n,12346
+Miša Kaja Lužar,79z,12347
+Živa Šivič,79n,12348
+Jona Čujež,SSz,12349
+Leon Hrovat,SSn,12350
+Janez Novak,46n,12351
