@@ -24,6 +24,15 @@ prefix = ''
 if len(sys.argv) > 1:
     prefix = '.\\' + sys.argv[1] + '\\'
 
+def ocisti_ime_datoteke(ime):
+    if not ime:
+        return ''
+    nedovoljeno = '\\/:*?\"<>|'
+    for znak in nedovoljeno:
+        ime = ime.replace(znak, '_')
+    return ime 
+
+
 def ustvari_priznanje(sola, oseba, mentor=False):
     if mentor:
         # naloži SVG datoteko
@@ -35,7 +44,7 @@ def ustvari_priznanje(sola, oseba, mentor=False):
         svg = svg.replace('1. do 12. februar 2021', termin)
         svg = svg.replace('1234567890', '')
         # nastavi ime PDF datoteke = ime mentorja
-        filename = oseba
+        filename = ocisti_ime_datoteke(oseba)
     else:
         # naloži SVG datoteko
         path = prefix + 'tekmovalec.svg'
@@ -47,7 +56,7 @@ def ustvari_priznanje(sola, oseba, mentor=False):
         svg = svg.replace('1. do 12. februar 2021', termin)
         svg = svg.replace('1234567890', oseba[2])
         # nastavi ime PDF datoteke = ime tekmovalca
-        filename = oseba[0] + " " + oseba[2]
+        filename = ocisti_ime_datoteke(oseba[0] + " " + oseba[2])
 
     # razčleni XML/SVG iz besedilnega niza
     parser = etree.XMLParser(

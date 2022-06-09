@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['priznanja.py'],
-             pathex=['C:\\Users\\granzelj\\Documents\\PIŠEK\\priznanja'],
+             pathex=['C:\\GITHUB\\pisek-priznanja'],
              binaries=[],
              datas=[],
              hiddenimports=[],

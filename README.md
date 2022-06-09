@@ -54,7 +54,7 @@ Opombe:
 
 ### mentorji.txt
 
-Datoteka vsebuje imena in priimke mentorjev. Za vsakega mentorja v svoji vrstici.
+Datoteka vsebuje imena in priimke mentorjev. Za vsakega mentorja v svoji vrstici. Datoteka ne sme vsebovati praznih vrstic.
 
 Primer:
 ```
@@ -64,7 +64,7 @@ Micka Kovačeva
 
 ### tekmovalci.txt
 
-Datoteka vsebuje podatke o tekmovalcih v CSV obliki. Za vsakega tekmovalca v svoji vrstici. Če je tekmovalec tekmoval v več kategorijah, mora datoteka vsebovati po eno vrstico s podatki za vsako kategorijo.
+Datoteka vsebuje podatke o tekmovalcih v CSV obliki. Za vsakega tekmovalca v svoji vrstici. Če je tekmovalec tekmoval v več kategorijah, mora datoteka vsebovati po eno vrstico s podatki za vsako kategorijo. Datoteka ne sme vsebovati praznih vrstic.
 
 Vsaka vrstica vsebuje naslednje podatke:
 Ime in priimek tekmovalca, kategorija, številka priznanja
